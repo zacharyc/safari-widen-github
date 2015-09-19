@@ -5,12 +5,12 @@
 	<script type="text/javascript" charset="utf-8">
 	
 	function performCommand(event) {
-		if (event.command === "doIt") {
+		if (event.command === "widen-gs-page") {
 			safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("runWidenPage");
 		}
 	}
 	function validateCommand(event) {
-		if (event.command === "doIt") {
+		if (event.command === "widen-gs-page") {
 			// event.target.disabled = !event.target.browserWindow.activeTab.url;
 		}
 	}
