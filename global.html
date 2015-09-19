@@ -6,8 +6,7 @@
 	
 	function performCommand(event) {
 		if (event.command === "doIt") {
-			console.log("trying to winden the page");
-			widenPage();
+			safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("runWidenPage");
 		}
 	}
 	function validateCommand(event) {

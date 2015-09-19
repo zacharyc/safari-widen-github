@@ -1,3 +1,10 @@
+function startWidenPage(theMessageEvent) {
+	if (theMessageEvent.name === "runWidenPage") {
+		widenPage();
+	}
+}
+safari.self.addEventListener("message", startWidenPage, false);
+
 function widenPage() {
   "use strict";
 
